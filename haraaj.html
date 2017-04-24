@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>workaround12</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amiri">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cairo">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=El+Messiri">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lateef">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Scheherazade">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="assets/fonts/material-icons.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-rtl.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-sortable.css">
+    <link rel="stylesheet" href="assets/css/fileinput.min.css">
+    <link rel="stylesheet" href="assets/css/Footer-Basic.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="assets/css/Juvi---3-Bullets-Divider---Center-Grey.css">
+    <link rel="stylesheet" href="assets/css/Navigation-Clean1-1.css">
+    <link rel="stylesheet" href="assets/css/Navigation-Clean1.css">
+    <link rel="stylesheet" href="assets/css/pace-theme-loading-bar.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/title-bullets.css">
+</head>
+
+<body>
+    <div class="modal fade" role="dialog" tabindex="-1" id="mymodal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                    <h4 class="modal-title">جدول ورود اطلاعات</h4></div>
+                <div class="modal-body">
+                    <form id="add-haraaj-form">
+                        <div>
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-md-4 col-md-offset-1 label-left-align">
+                                        <label class="control-label">۱. انتخاب برند</label>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <select class="form-control selectpicker" multiple="">
+                                            <option value="12" selected="">ZARA</option>
+                                            <option value="13">Nike</option>
+                                            <option value="14">Reebok</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-md-4 col-md-offset-1 label-left-align">
+                                        <label class="control-label">۲. انتخاب شعبه</label>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <select class="form-control selectpicker" multiple="">
+                                            <option value="12" selected="">تمام شعب</option>
+                                            <option value="13">ستارخان</option>
+                                            <option value="14">ونک</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-md-4 col-md-offset-1 label-left-align">
+                                        <label class="control-label">۳. عنوان حراج</label>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <input class="form-control" type="text" name="title-of" placeholder="فروش زمستانه">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-md-4 col-md-offset-1 label-left-align">
+                                        <label class="control-label">۴. میزان حراج</label>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="row">
+                                            <div class="col-md-7 col-xs-7 right-text-align">
+                                                <div class="radio">
+                                                    <label class="control-label">
+                                                        <input type="radio" name="mizan-e-haraaj">حراج تا سقف</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-5 col-xs-5">
+                                                <div class="input-group">
+    <input id="prependedtext" name="prependedtext" class="form-control" placeholder="" type="text" required="">
+    <span class="input-group-addon">درصد</span>
+</div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-7 col-xs-7 right-text-align">
+                                                <div class="radio">
+                                                    <label class="control-label">
+                                                        <input type="radio" name="mizan-e-haraaj">حراج کلیه محصولات</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-5 col-xs-5">
+                                                <div class="input-group">
+    <input id="prependedtext" name="prependedtext" class="form-control" placeholder="" type="text" required="">
+    <span class="input-group-addon">درصد</span>
+</div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-5 right-text-align">
+                                                <div class="radio">
+                                                    <label class="control-label">
+                                                        <input type="radio" name="mizan-e-haraaj">فروش ویژه</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-7">
+                                                <textarea class="form-control"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-default" type="button" data-dismiss="modal">بستن </button>
+                    <button class="btn btn-primary" type="submit" form="add-haraaj-form">ثبت حراج</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <nav class="navbar navbar-default navigation-clean">
+            <div class="container">
+                <div class="navbar-header"><a class="navbar-brand navbar-link" href="#">وی برندز<img src="assets/img/Logo.png" style="width:30px;height:42px;margin-top:-10px;"></a>
+                    <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+                </div>
+                <div class="collapse navbar-collapse" id="navcol-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li role="presentation"><a href="index.html">خانه </a></li>
+                        <li role="presentation"><a href="brand.html">اطلاعات برند</a></li>
+                        <li role="presentation"><a href="product.html">افزودن محصول</a></li>
+                        <li class="active" role="presentation"><a href="#">اطلاع‌رسانی حراج</a></li>
+                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#">ارتباط با ما<span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li role="presentation">
+                                    <a href="#"> <i class="fa fa-telegram" style="margin-left:10px;"></i>vbrand@</a>
+                                </li>
+                                <li role="presentation">
+                                    <a href="#"> <i class="fa fa-phone-square" style="margin-left:10px;"></i>88334005</a>
+                                </li>
+                                <li role="presentation">
+                                    <a href="#"> <i class="fa fa-envelope" style="margin-left:10px;"></i>info@vbrands.ir</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="container">
+        <div id="add-sec">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2 col-md-offset-5 col-sm-4 col-sm-offset-4 col-xs-8 col-xs-offset-2 add-box" style="text-align:center;"><i class="material-icons" data-bs-hover-animate="pulse" style="text-align:center;" data-toggle="modal" data-target="#mymodal">add_box</i>
+                        <h3 class="text-center add-text">افزودن حراج</h3></div>
+                </div>
+            </div>
+        </div>
+        <div id="table-div">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-sm-3"></div>
+                    <div class="col-md-4 col-sm-6" style="/*clear:both;*/">
+                        <h3 class="text-center" id="table-title">. لیست حراج‌های شما .</h3></div>
+                    <div class="col-md-4 col-sm-3" style="/*position:relative;*/"></div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-md-offset-0">
+                        <div>
+                            <input type="search" name="search-box" placeholder="جستجو">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="table-responsive hidden-xs">
+                            <table class="table table-hover sortable">
+                                <thead>
+                                    <tr>
+                                        <th># </th>
+                                        <th>آغاز </th>
+                                        <th>پایان </th>
+                                        <th>نوع </th>
+                                        <th>میزان </th>
+                                        <th>برند </th>
+                                        <th>وضعیت </th>
+                                        <th style="padding-right:7px;">ویرایش </th>
+                                        <th>حذف </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>۱ </td>
+                                        <td>۲۰ بهمن</td>
+                                        <td>۳۰ بهمن</td>
+                                        <td>تا سقف</td>
+                                        <td>۷۰ ٪</td>
+                                        <td>ZARA </td>
+                                        <td>در انتظار تایید<i class="icon ion-load-a"></i> </td>
+                                        <td>
+                                            <button class="btn btn-default btn-sm" type="button">ویرایش </button>
+                                        </td>
+                                        <td>
+                                            <button class="btn btn-danger btn-sm" type="button">حذف </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>۲ </td>
+                                        <td>۱ بهمن</td>
+                                        <td>۱۵ بهمن</td>
+                                        <td>تمام محصولات</td>
+                                        <td>۵۰ ٪</td>
+                                        <td>NIKE </td>
+                                        <td>تایید شده<i class="icon ion-checkmark-circled"></i></td>
+                                        <td>
+                                            <button class="btn btn-default btn-sm" type="button">ویرایش </button>
+                                        </td>
+                                        <td>
+                                            <button class="btn btn-danger btn-sm" type="button">حذف </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>۳ </td>
+                                        <td>۱۲ آذر</td>
+                                        <td>۲۰ آذر</td>
+                                        <td>تا سقف</td>
+                                        <td>۲۵٪ </td>
+                                        <td>ZARA </td>
+                                        <td>تایید شده <i class="icon ion-checkmark-circled"></i></td>
+                                        <td>
+                                            <button class="btn btn-default btn-sm" type="button">ویرایش </button>
+                                        </td>
+                                        <td>
+                                            <button class="btn btn-danger btn-sm" type="button">حذف </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>۴ </td>
+                                        <td>۱ مهر</td>
+                                        <td>۱۷ مهر</td>
+                                        <td>تمام محصولات</td>
+                                        <td>۱۰٪ </td>
+                                        <td>ZARA </td>
+                                        <td>تایید شده <i class="icon ion-checkmark-circled"></i></td>
+                                        <td>
+                                            <button class="btn btn-default btn-sm" type="button">ویرایش </button>
+                                        </td>
+                                        <td>
+                                            <button class="btn btn-danger btn-sm" type="button">حذف </button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="hidden-sm hidden-md hidden-lg">
+                            <table class="table table-hover sortable">
+                                <thead>
+                                    <tr>
+                                        <th># </th>
+                                        <th>میزان </th>
+                                        <th>برند </th>
+                                        <th>ویرایش </th>
+                                        <th>حذف </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>۱ </td>
+                                        <td>۷۰ ٪</td>
+                                        <td>ZARA </td>
+                                        <td>
+                                            <button class="btn btn-default btn-sm" type="button">ویرایش </button>
+                                        </td>
+                                        <td>
+                                            <button class="btn btn-danger btn-sm" type="button">حذف </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>۲ </td>
+                                        <td>۵۰ ٪</td>
+                                        <td>NIKE </td>
+                                        <td>
+                                            <button class="btn btn-default btn-sm" type="button">ویرایش </button>
+                                        </td>
+                                        <td>
+                                            <button class="btn btn-danger btn-sm" type="button">حذف </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>۳ </td>
+                                        <td>۲۵٪ </td>
+                                        <td>ZARA </td>
+                                        <td>
+                                            <button class="btn btn-default btn-sm" type="button">ویرایش </button>
+                                        </td>
+                                        <td>
+                                            <button class="btn btn-danger btn-sm" type="button">حذف </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>۴ </td>
+                                        <td>۱۰٪ </td>
+                                        <td>ZARA </td>
+                                        <td>
+                                            <button class="btn btn-default btn-sm" type="button">ویرایش </button>
+                                        </td>
+                                        <td>
+                                            <button class="btn btn-danger btn-sm" type="button">حذف </button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-md-offset-0" style="/*padding-top:0 !important;*/">
+                        <nav>
+    <ul class="pagination">
+        <li><a aria-label="Previous"><span aria-hidden="true">«</span></a></li>
+        <li><a>۱</a></li>
+        <li><a>۲</a></li>
+        <li><a>۳</a></li>
+        <li><a>۴</a></li>
+        <li><a>۵</a></li>
+        <li><a aria-label="Next"><span aria-hidden="true">»</span></a></li>
+    </ul>
+</nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-basic">
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-md-offset-4">
+                        <p class="text-center" style="color:#f1f1f1;">Copyright © 2017 Vbrands Co</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/moment.min.js"></script>
+    <script src="assets/js/bootstrap-sortable.js"></script>
+    <script src="assets/js/fileinput.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/pace.js"></script>
+    <script src="assets/js/fa.js"></script>
+    <script src="assets/js/bootstrap-select.min.js"></script>
+    <script src="assets/js/bs-animation.js"></script>
+</body>
+
+</html>

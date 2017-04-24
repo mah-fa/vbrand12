@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>workaround12</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amiri">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cairo">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=El+Messiri">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lateef">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Scheherazade">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="assets/fonts/material-icons.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-rtl.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-sortable.css">
+    <link rel="stylesheet" href="assets/css/fileinput.min.css">
+    <link rel="stylesheet" href="assets/css/Footer-Basic.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="assets/css/Juvi---3-Bullets-Divider---Center-Grey.css">
+    <link rel="stylesheet" href="assets/css/Navigation-Clean1-1.css">
+    <link rel="stylesheet" href="assets/css/Navigation-Clean1.css">
+    <link rel="stylesheet" href="assets/css/pace-theme-loading-bar.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/title-bullets.css">
+</head>
+
+<body>
+    <div class="modal fade" role="dialog" tabindex="-1" id="product-user-modal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                    <h4 class="modal-title">جدول ورود اطلاعات</h4></div>
+                <div class="modal-body">
+                    <div>
+                        <form id="product-user-form">
+                            <div class="form-group">
+                                <div>
+                                    <div class="row">
+                                        <div class="col-md-4 col-md-offset-1">
+                                            <label class="control-label">۱. کد محصول</label>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <input class="form-control" type="text">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div>
+                                    <div class="row">
+                                        <div class="col-md-4 col-md-offset-1">
+                                            <label class="control-label">۲. نام محصول *</label>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <input class="form-control" type="text">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div>
+                                    <div class="row">
+                                        <div class="col-md-4 col-md-offset-1">
+                                            <label class="control-label">۳. انتخاب برند *</label>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <select class="form-control">
+                                                <optgroup label="برندها">
+                                                    <option value="12" selected="">Nike</option>
+                                                    <option value="13">ZARA</option>
+                                                </optgroup>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div>
+                                    <div class="row">
+                                        <div class="col-md-4 col-md-offset-1">
+                                            <label class="control-label">۴. انتخاب شعبه</label>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <select class="form-control selectpicker" multiple="">
+                                                <option value="12" selected="">تمامی شعب</option>
+                                                <option value="13">شعبه سعادت‌آباد</option>
+                                                <option value="14">شعبه ونک</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div>
+                                    <div class="row">
+                                        <div class="col-md-4 col-md-offset-1">
+                                            <label class="control-label">۵. انتخاب جنسیت *</label>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <select class="form-control">
+                                                <option value="12" selected="">زنانه</option>
+                                                <option value="13">مردانه</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div>
+                                    <div class="row">
+                                        <div class="col-md-4 col-md-offset-1">
+                                            <label class="control-label">۶. انتخاب نوع *</label>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <select class="form-control selectpicker" multiple="">
+                                                <option value="12" selected="">نوع یک</option>
+                                                <option value="13">نوع دو</option>
+                                                <option value="14">نوع سه</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div>
+                                    <div class="row">
+                                        <div class="col-md-4 col-md-offset-1">
+                                            <label class="control-label">۷. قیمت</label>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <input class="form-control" type="text">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div>
+                                    <div class="row">
+                                        <div class="col-md-4 col-md-offset-1">
+                                            <label class="control-label">۸. تخفیف </label>
+                                        </div>
+                                        <div class="col-md-5">
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <div class="radio">
+                                                        <label class="control-label">
+                                                            <input type="radio" name="discount" checked="">درصد</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <input class="form-control" type="text">
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <div class="radio">
+                                                        <label class="control-label">
+                                                            <input type="radio" name="discount">قیمت</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <input class="form-control" type="text" disabled="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div>
+                                    <div class="row">
+                                        <div class="col-md-4 col-md-offset-1">
+                                            <label class="control-label">۹. جنس و کیفیت پارچه</label>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <select class="form-control">
+                                                <option value="12" selected="">جنس یک</option>
+                                                <option value="13">جنس دو</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div>
+                                    <div class="row">
+                                        <div class="col-md-4 col-md-offset-1">
+                                            <label class="control-label">۱۰. فصل</label>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <select class="form-control">
+                                                <option value="12" selected="">بهاره</option>
+                                                <option value="13">تابستانه</option>
+                                                <option value="">پاییزه</option>
+                                                <option value="">زمستانه</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div>
+                                    <div class="row">
+                                        <div class="col-md-4 col-md-offset-1">
+                                            <label class="control-label">۱۱. مدل</label>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <input class="form-control" type="text">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div>
+                                    <div class="row">
+                                        <div class="col-md-4 col-md-offset-1">
+                                            <label class="control-label">۱۲. دوخت سفارشی</label>
+                                        </div>
+                                        <div class="col-md-5">
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <div class="radio">
+                                                        <label class="control-label">
+                                                            <input type="radio" name="dookht-e-sefareshi" checked="">داریم</label>
+                                                    </div>
+                                                    <div class="radio">
+                                                        <label class="control-label">
+                                                            <input type="radio" name="dookht-e-sefareshi" checked="">نداریم</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div>
+                                    <div class="row">
+                                        <div class="col-md-4 col-md-offset-1">
+                                            <label class="control-label">۱۳. توضیحات</label>
+                                        </div>
+                                        <div class="col-md-5">
+                                            <textarea class="form-control"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div>
+                                    <div class="row">
+                                        <div class="col-md-4 col-md-offset-1">
+                                            <label class="control-label">۱۴. افزودن تصویر </label>
+                                        </div>
+                                        <div class="col-md-5">
+                                            <input type="file" id="product-upload-pic" class="file" data-show-upload="false" name="product-upload-pic []" multiple="true">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-default" type="button" data-dismiss="modal">بستن </button>
+                    <button class="btn btn-primary" type="submit" form="product-user-form">ثبت محصول</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <nav class="navbar navbar-default navigation-clean">
+            <div class="container">
+                <div class="navbar-header"><a class="navbar-brand navbar-link" href="#">وی برندز<img src="assets/img/Logo.png" style="width:30px;height:42px;margin-top:-10px;"></a>
+                    <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+                </div>
+                <div class="collapse navbar-collapse" id="navcol-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li role="presentation"><a href="index.html">خانه </a></li>
+                        <li role="presentation"><a href="brand.html">اطلاعات برند</a></li>
+                        <li class="active" role="presentation"><a href="#">افزودن محصول</a></li>
+                        <li role="presentation"><a href="haraaj.html">اطلاع‌رسانی حراج</a></li>
+                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#">ارتباط با ما<span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li role="presentation">
+                                    <a href="#"> <i class="fa fa-telegram" style="margin-left:10px;"></i>vbrands.ir@</a>
+                                </li>
+                                <li role="presentation">
+                                    <a href="#"> <i class="fa fa-phone-square" style="margin-left:10px;"></i>88334005</a>
+                                </li>
+                                <li role="presentation">
+                                    <a href="#"> <i class="fa fa-envelope" style="margin-left:10px;"></i>info@vbrands.ir</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="container">
+        <div id="add-sec">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2 col-md-offset-5 col-sm-4 col-sm-offset-4 col-xs-8 col-xs-offset-2 add-box" style="text-align:center;"><i class="material-icons" data-bs-hover-animate="pulse" style="text-align:center;" data-toggle="modal" data-target="#product-user-modal">add_box</i>
+                        <h3 class="text-center add-text">افزودن محصول</h3></div>
+                </div>
+            </div>
+        </div>
+        <div id="table-div">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-sm-3"></div>
+                    <div class="col-md-4 col-sm-6" style="/*clear:both;*/">
+                        <h3 class="text-center" id="table-title">. لیست محصولات شما .</h3></div>
+                    <div class="col-md-4 col-sm-3" style="/*position:relative;*/"></div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-md-offset-0">
+                        <div>
+                            <input type="search" name="search-box" placeholder="جستجو">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="table-responsive hidden-xs" id="the-table">
+                            <table class="table table-hover sortable" id="product-table">
+                                <thead>
+                                    <tr>
+                                        <th># </th>
+                                        <th>تصویر </th>
+                                        <th>نام محصول</th>
+                                        <th>نوع </th>
+                                        <th>برند </th>
+                                        <th>قیمت </th>
+                                        <th>وضعیت </th>
+                                        <th>ویرایش </th>
+                                        <th>حذف </th>
+                                        <th> درصد تخفیف </th>
+                                        <th>قیمت تخفیف</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>۱ </td>
+                                        <td> <img src="assets/img/Women-Casual-Handbag-1ec915.jpg"></td>
+                                        <td>کیف دستی روزمره زنانه</td>
+                                        <td>نوع ۱</td>
+                                        <td>Mango </td>
+                                        <td>۴۵۰۰۰ </td>
+                                        <td>در انتظار تایید<i class="icon ion-load-a"></i> </td>
+                                        <td>
+                                            <button class="btn btn-default btn-sm" type="button">ویرایش </button>
+                                        </td>
+                                        <td>
+                                            <button class="btn btn-danger btn-sm" type="button">حذف </button>
+                                        </td>
+                                        <td>- </td>
+                                        <td>۲۰۰۰ </td>
+                                    </tr>
+                                    <tr>
+                                        <td>۲ </td>
+                                        <td> <img src="assets/img/Men-Cotton-Short-Sleeve-Poloshirt-2d8ad2.jpg"></td>
+                                        <td>پولوشرت نخی آستین کوتاه</td>
+                                        <td>نوع ۳</td>
+                                        <td>Jack &amp; Jones</td>
+                                        <td>۵۰۰۰۰ </td>
+                                        <td>تایید شده<i class="icon ion-checkmark-circled"></i></td>
+                                        <td>
+                                            <button class="btn btn-default btn-sm" type="button">ویرایش </button>
+                                        </td>
+                                        <td>
+                                            <button class="btn btn-danger btn-sm" type="button">حذف </button>
+                                        </td>
+                                        <td>۵ درصد</td>
+                                        <td>- </td>
+                                    </tr>
+                                    <tr>
+                                        <td>۳ </td>
+                                        <td> <img src="assets/img/Men-Cotton-Short-Sleeve-T-shirt-81ec47.jpg"></td>
+                                        <td>تی شرت نخی آستین کوتاه</td>
+                                        <td>نوع ۳</td>
+                                        <td>Superdry </td>
+                                        <td>۳۰۰۰۰ </td>
+                                        <td>تایید شده <i class="icon ion-checkmark-circled"></i></td>
+                                        <td>
+                                            <button class="btn btn-default btn-sm" type="button">ویرایش </button>
+                                        </td>
+                                        <td>
+                                            <button class="btn btn-danger btn-sm" type="button">حذف </button>
+                                        </td>
+                                        <td>- </td>
+                                        <td>۱۰۰۰۰ </td>
+                                    </tr>
+                                    <tr>
+                                        <td>۴ </td>
+                                        <td> <img src="assets/img/Girls-Midi-Dress.jpg"></td>
+                                        <td>پیراهن میدی دخترانه</td>
+                                        <td>نوع ۲</td>
+                                        <td>Jasper </td>
+                                        <td>۶۰۰۰۰ </td>
+                                        <td>تایید شده <i class="icon ion-checkmark-circled"></i></td>
+                                        <td>
+                                            <button class="btn btn-default btn-sm" type="button">ویرایش </button>
+                                        </td>
+                                        <td>
+                                            <button class="btn btn-danger btn-sm" type="button">حذف </button>
+                                        </td>
+                                        <td>۱۵ درصد</td>
+                                        <td>- </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="hidden-sm hidden-md hidden-lg" id="the-table">
+                            <table class="table table-hover sortable" id="product-table">
+                                <thead>
+                                    <tr>
+                                        <th># </th>
+                                        <th>تصویر </th>
+                                        <th>نام محصول</th>
+                                        <th>ویرایش </th>
+                                        <th>حذف </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>۱ </td>
+                                        <td> <img src="assets/img/Women-Casual-Handbag-1ec915.jpg"></td>
+                                        <td>کیف دستی روزمره زنانه</td>
+                                        <td>
+                                            <button class="btn btn-default btn-sm" type="button">ویرایش </button>
+                                        </td>
+                                        <td>
+                                            <button class="btn btn-danger btn-sm" type="button">حذف </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>۲ </td>
+                                        <td> <img src="assets/img/Men-Cotton-Short-Sleeve-Poloshirt-2d8ad2.jpg"></td>
+                                        <td>پولوشرت نخی آستین کوتاه</td>
+                                        <td>
+                                            <button class="btn btn-default btn-sm" type="button">ویرایش </button>
+                                        </td>
+                                        <td>
+                                            <button class="btn btn-danger btn-sm" type="button">حذف </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>۳ </td>
+                                        <td> <img src="assets/img/Men-Cotton-Short-Sleeve-T-shirt-81ec47.jpg"></td>
+                                        <td>تی شرت نخی آستین کوتاه</td>
+                                        <td>
+                                            <button class="btn btn-default btn-sm" type="button">ویرایش </button>
+                                        </td>
+                                        <td>
+                                            <button class="btn btn-danger btn-sm" type="button">حذف </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>۴ </td>
+                                        <td> <img src="assets/img/Girls-Midi-Dress.jpg"></td>
+                                        <td>پیراهن میدی دخترانه</td>
+                                        <td>
+                                            <button class="btn btn-default btn-sm" type="button">ویرایش </button>
+                                        </td>
+                                        <td>
+                                            <button class="btn btn-danger btn-sm" type="button">حذف </button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-md-offset-0" style="/*padding-top:0 !important;*/">
+                        <nav>
+    <ul class="pagination">
+        <li><a aria-label="Previous"><span aria-hidden="true">«</span></a></li>
+        <li><a>۱</a></li>
+        <li><a>۲</a></li>
+        <li><a>۳</a></li>
+        <li><a>۴</a></li>
+        <li><a>۵</a></li>
+        <li><a aria-label="Next"><span aria-hidden="true">»</span></a></li>
+    </ul>
+</nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-basic">
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-md-offset-4">
+                        <p class="text-center" style="color:#f1f1f1;">Copyright © 2017 Vbrands Co</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/moment.min.js"></script>
+    <script src="assets/js/bootstrap-sortable.js"></script>
+    <script src="assets/js/fileinput.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/pace.js"></script>
+    <script src="assets/js/fa.js"></script>
+    <script src="assets/js/bootstrap-select.min.js"></script>
+    <script src="assets/js/bs-animation.js"></script>
+</body>
+
+</html>

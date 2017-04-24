@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>workaround12</title>
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amiri">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cairo">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=El+Messiri">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lateef">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Scheherazade">
+    <link rel="stylesheet" href="../assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="../assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="../assets/fonts/material-icons.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap-rtl.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap-sortable.css">
+    <link rel="stylesheet" href="../assets/css/fileinput.min.css">
+    <link rel="stylesheet" href="../assets/css/Footer-Basic.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="../assets/css/Juvi---3-Bullets-Divider---Center-Grey.css">
+    <link rel="stylesheet" href="../assets/css/Navigation-Clean1-1.css">
+    <link rel="stylesheet" href="../assets/css/Navigation-Clean1.css">
+    <link rel="stylesheet" href="../assets/css/pace-theme-loading-bar.css">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/title-bullets.css">
+</head>
+
+<body>
+    <div>
+        <nav class="navbar navbar-default navigation-clean">
+            <div class="container">
+                <div class="navbar-header"><a class="navbar-brand navbar-link" href="#">ادمین | وی برندز<img src="../assets/img/Logo.png" style="width:30px;height:42px;margin-top:-10px;"></a>
+                    <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+                </div>
+                <div class="collapse navbar-collapse" id="navcol-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li role="presentation"><a href="index.html">خانه </a></li>
+                        <li role="presentation"><a href="#">اطلاعات برند</a></li>
+                        <li role="presentation"><a href="#">افزودن محصول</a></li>
+                        <li class="active" role="presentation"><a href="haraaj.html">اطلاع‌رسانی حراج</a></li>
+                        <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#">ارتباط با ما<span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li role="presentation">
+                                    <a href="#"> <i class="fa fa-telegram" style="margin-left:10px;"></i>vbrand@</a>
+                                </li>
+                                <li role="presentation">
+                                    <a href="#"> <i class="fa fa-phone-square" style="margin-left:10px;"></i>88334005</a>
+                                </li>
+                                <li role="presentation">
+                                    <a href="#"> <i class="fa fa-envelope" style="margin-left:10px;"></i>info@vbrands.ir</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="container">
+        <div class="tab-container">
+            <ul class="nav nav-tabs">
+                <li><a href="#tab-1" role="tab" data-toggle="tab">•• حراج ••</a></li>
+                <li class="active"><a href="#tab-2" role="tab" data-toggle="tab">نوتیف<i class="icon ion-android-notifications-none" style="margin-right:5px;/*font-size:20px;*/"></i> </a></li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane" role="tabpanel" id="tab-1">
+                    <div class="row" style="margin-top:60px;">
+                        <div class="col-md-2 col-md-offset-5 col-sm-4 col-sm-offset-4 col-xs-8 col-xs-offset-2 add-box" style="text-align:center;"><i class="material-icons" data-bs-hover-animate="pulse" style="text-align:center;" data-toggle="modal" data-target="#sale-admin-modal">add_box</i>
+                            <h3 class="text-center add-text">افزودن حراج</h3>
+                            <div class="modal fade" role="dialog" tabindex="-1" id="mymodal">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                            <h4 class="modal-title">جدول ورود اطلاعات</h4></div>
+                                        <div class="modal-body">
+                                            <form id="add-haraaj-form">
+                                                <div>
+                                                    <div class="form-group">
+                                                        <div class="row">
+                                                            <div class="col-md-4 col-md-offset-1 label-left-align">
+                                                                <label class="control-label">۱. انتخاب برند</label>
+                                                            </div>
+                                                            <div class="col-md-4">
+                                                                <select class="form-control">
+                                                                    <optgroup label="برندها">
+                                                                        <option value="12" selected="">NIKE</option>
+                                                                        <option value="13">ZARA</option>
+                                                                    </optgroup>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <div class="row">
+                                                            <div class="col-md-4 col-md-offset-1 label-left-align">
+                                                                <label class="control-label">۲. انتخاب شعبه</label>
+                                                            </div>
+                                                            <div class="col-md-4">
+                                                                <select class="form-control">
+                                                                    <optgroup label="شعبه‌ها">
+                                                                        <option value="12" selected="">تمامی شعب</option>
+                                                                        <option value="13">سعادت آباد</option>
+                                                                        <option value="14">امیر آباد</option>
+                                                                    </optgroup>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <div class="row">
+                                                            <div class="col-md-4 col-md-offset-1 label-left-align">
+                                                                <label class="control-label">۳. عنوان حراج</label>
+                                                            </div>
+                                                            <div class="col-md-4">
+                                                                <input class="form-control" type="text" name="title-of" placeholder="فروش زمستانه">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <div class="row">
+                                                            <div class="col-md-4 col-md-offset-1 label-left-align">
+                                                                <label class="control-label">۴. میزان حراج</label>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <div class="row">
+                                                                    <div class="col-md-7 col-xs-7 right-text-align">
+                                                                        <div class="radio">
+                                                                            <label class="control-label">
+                                                                                <input type="radio" name="mizan-e-haraaj">حراج تا سقف</label>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-5 col-xs-5">
+                                                                        <div class="input-group">
+    <input id="prependedtext" name="prependedtext" class="form-control" placeholder="" type="text" required="">
+    <span class="input-group-addon">درصد</span>
+</div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col-md-7 col-xs-7 right-text-align">
+                                                                        <div class="radio">
+                                                                            <label class="control-label">
+                                                                                <input type="radio" name="mizan-e-haraaj">حراج کلیه محصولات</label>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-5 col-xs-5">
+                                                                        <div class="input-group">
+    <input id="prependedtext" name="prependedtext" class="form-control" placeholder="" type="text" required="">
+    <span class="input-group-addon">درصد</span>
+</div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col-md-5 right-text-align">
+                                                                        <div class="radio">
+                                                                            <label class="control-label">
+                                                                                <input type="radio" name="mizan-e-haraaj">فروش ویژه</label>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-7">
+                                                                        <textarea class="form-control"></textarea>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button class="btn btn-default" type="button" data-dismiss="modal">بستن </button>
+                                            <button class="btn btn-primary" type="submit" form="add-haraaj-form">ثبت حراج</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="table-div">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-4 col-sm-3"></div>
+                                <div class="col-md-4 col-sm-6" style="/*clear:both;*/">
+                                    <h3 class="text-center" id="table-title">. لیست حراج‌های شما .</h3></div>
+                                <div class="col-md-4 col-sm-3" style="/*position:relative;*/"></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4 col-md-offset-0">
+                                    <div>
+                                        <input type="search" name="search-box" placeholder="جستجو">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="table-responsive" id="the-table">
+                                        <table class="table table-hover">
+                                            <thead>
+                                                <tr>
+                                                    <th># </th>
+                                                    <th>آغاز </th>
+                                                    <th>پایان </th>
+                                                    <th>نوع </th>
+                                                    <th>میزان </th>
+                                                    <th>برند </th>
+                                                    <th>وضعیت </th>
+                                                    <th>تایید </th>
+                                                    <th>ویرایش </th>
+                                                    <th>حذف </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>۱ </td>
+                                                    <td>۲۰ بهمن</td>
+                                                    <td>۳۰ بهمن</td>
+                                                    <td>تا سقف</td>
+                                                    <td>۷۰ ٪</td>
+                                                    <td>ZARA </td>
+                                                    <td>در انتظار تایید<i class="icon ion-load-a"></i> </td>
+                                                    <td>
+                                                        <button class="btn btn-success" type="button">تایید </button>
+                                                    </td>
+                                                    <td>
+                                                        <button class="btn btn-default btn-sm" type="button">ویرایش </button>
+                                                    </td>
+                                                    <td>
+                                                        <button class="btn btn-danger btn-sm" type="button">حذف </button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>۲ </td>
+                                                    <td>۱ بهمن</td>
+                                                    <td>۱۵ بهمن</td>
+                                                    <td>تمام محصولات</td>
+                                                    <td>۵۰ ٪</td>
+                                                    <td>NIKE </td>
+                                                    <td>تایید شده<i class="icon ion-checkmark-circled"></i></td>
+                                                    <td>
+                                                        <button class="btn btn-success" type="button">تایید </button>
+                                                    </td>
+                                                    <td>
+                                                        <button class="btn btn-default btn-sm" type="button">ویرایش </button>
+                                                    </td>
+                                                    <td>
+                                                        <button class="btn btn-danger btn-sm" type="button">حذف </button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>۳ </td>
+                                                    <td>۱۲ آذر</td>
+                                                    <td>۲۰ آذر</td>
+                                                    <td>تا سقف</td>
+                                                    <td>۲۵٪ </td>
+                                                    <td>ZARA </td>
+                                                    <td>تایید شده <i class="icon ion-checkmark-circled"></i></td>
+                                                    <td>
+                                                        <button class="btn btn-success" type="button">تایید </button>
+                                                    </td>
+                                                    <td>
+                                                        <button class="btn btn-default btn-sm" type="button">ویرایش </button>
+                                                    </td>
+                                                    <td>
+                                                        <button class="btn btn-danger btn-sm" type="button">حذف </button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>۴ </td>
+                                                    <td>۱ مهر</td>
+                                                    <td>۱۷ مهر</td>
+                                                    <td>تمام محصولات</td>
+                                                    <td>۱۰٪ </td>
+                                                    <td>ZARA </td>
+                                                    <td>تایید شده <i class="icon ion-checkmark-circled"></i></td>
+                                                    <td>
+                                                        <button class="btn btn-success" type="button">تایید </button>
+                                                    </td>
+                                                    <td>
+                                                        <button class="btn btn-default btn-sm" type="button">ویرایش </button>
+                                                    </td>
+                                                    <td>
+                                                        <button class="btn btn-danger btn-sm" type="button">حذف </button>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4 col-md-offset-0" style="/*padding-top:0 !important;*/">
+                                    <nav>
+    <ul class="pagination">
+        <li><a aria-label="Previous"><span aria-hidden="true">«</span></a></li>
+        <li><a>۱</a></li>
+        <li><a>۲</a></li>
+        <li><a>۳</a></li>
+        <li><a>۴</a></li>
+        <li><a>۵</a></li>
+        <li><a aria-label="Next"><span aria-hidden="true">»</span></a></li>
+    </ul>
+</nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane active" role="tabpanel" id="tab-2">
+                    <div class="row" style="margin-top:60px;">
+                        <div class="col-md-2 col-md-offset-5 col-sm-4 col-sm-offset-4 col-xs-8 col-xs-offset-2 add-box" style="text-align:center;"><i class="material-icons" data-bs-hover-animate="pulse" style="text-align:center;" data-toggle="modal" data-target="#notif-admin-modal">add_box</i>
+                            <h3 class="text-center add-text">افزودن نوتیف</h3></div>
+                    </div>
+                    <div id="table-div">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-4 col-sm-3"></div>
+                                <div class="col-md-4 col-sm-6" style="/*clear:both;*/">
+                                    <h3 class="text-center" id="table-title">. لیست نوتیف‌های ارسالی .</h3></div>
+                                <div class="col-md-4 col-sm-3" style="/*position:relative;*/"></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4 col-md-offset-0">
+                                    <div>
+                                        <input type="search" name="search-box" placeholder="جستجو">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="table-responsive" id="the-table">
+                                        <table class="table table-hover">
+                                            <thead>
+                                                <tr>
+                                                    <th># </th>
+                                                    <th>تاریخ </th>
+                                                    <th>متن </th>
+                                                    <th>نوع </th>
+                                                    <th>تعداد ارسال</th>
+                                                    <th>تعداد دریافت</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>۱ </td>
+                                                    <td>۲۰ اسفند</td>
+                                                    <td>۵۰ درصد تخفیف زارا</td>
+                                                    <td>SALE </td>
+                                                    <td>۵۳۲۰ </td>
+                                                    <td>۵۰ درصد</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>۲ </td>
+                                                    <td>۱۲ اسفند</td>
+                                                    <td>۱۲ درصد تخفیف</td>
+                                                    <td>SALE </td>
+                                                    <td>۲۳۵۹ </td>
+                                                    <td>۶۷ درصد</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>۳ </td>
+                                                    <td>۱۵ بهمن</td>
+                                                    <td>هزینه حمل رایگان</td>
+                                                    <td>SALE </td>
+                                                    <td>۳۴۴۰ </td>
+                                                    <td>۶۰ درصد</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>۴ </td>
+                                                    <td>۳۰ دی</td>
+                                                    <td>تخفیف برای خریدهای بالا</td>
+                                                    <td>SALE </td>
+                                                    <td>۷۵۸۰ </td>
+                                                    <td>۵۸ درصد</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4 col-md-offset-0" style="/*padding-top:0 !important;*/">
+                                    <nav>
+    <ul class="pagination">
+        <li><a aria-label="Previous"><span aria-hidden="true">«</span></a></li>
+        <li><a>۱</a></li>
+        <li><a>۲</a></li>
+        <li><a>۳</a></li>
+        <li><a>۴</a></li>
+        <li><a>۵</a></li>
+        <li><a aria-label="Next"><span aria-hidden="true">»</span></a></li>
+    </ul>
+</nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" role="dialog" tabindex="-1" id="sale-admin-modal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                    <h4 class="text-center modal-title">فرم ورود اطلاعات</h4></div>
+                <div class="modal-body">
+                    <form id="sale-admin-form">
+                        <div>
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-md-4 col-md-offset-1 label-left-align">
+                                        <label class="control-label">۱. انتخاب برند</label>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <select class="form-control">
+                                            <optgroup label="برندها">
+                                                <option value="12" selected="">NIKE</option>
+                                                <option value="13">ZARA</option>
+                                            </optgroup>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-md-4 col-md-offset-1 label-left-align">
+                                        <label class="control-label">۲. انتخاب شعبه</label>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <select class="form-control">
+                                            <optgroup label="شعبه‌ها">
+                                                <option value="12" selected="">تمامی شعب</option>
+                                                <option value="13">سعادت آباد</option>
+                                                <option value="14">امیر آباد</option>
+                                            </optgroup>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-md-4 col-md-offset-1 label-left-align">
+                                        <label class="control-label">۳. عنوان حراج</label>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <input class="form-control" type="text" name="title-of" placeholder="فروش زمستانه">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-md-4 col-md-offset-1 label-left-align">
+                                        <label class="control-label">۴. میزان حراج</label>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="row">
+                                            <div class="col-md-7 col-xs-7 right-text-align">
+                                                <div class="radio">
+                                                    <label class="control-label">
+                                                        <input type="radio" name="mizan-e-haraaj">حراج تا سقف</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-5 col-xs-5">
+                                                <div class="input-group">
+    <input id="prependedtext" name="prependedtext" class="form-control" placeholder="" type="text" required="">
+    <span class="input-group-addon">درصد</span>
+</div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-7 col-xs-7 right-text-align">
+                                                <div class="radio">
+                                                    <label class="control-label">
+                                                        <input type="radio" name="mizan-e-haraaj">حراج کلیه محصولات</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-5 col-xs-5">
+                                                <div class="input-group">
+    <input id="prependedtext" name="prependedtext" class="form-control" placeholder="" type="text" required="">
+    <span class="input-group-addon">درصد</span>
+</div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-5 right-text-align">
+                                                <div class="radio">
+                                                    <label class="control-label">
+                                                        <input type="radio" name="mizan-e-haraaj">فروش ویژه</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-7">
+                                                <textarea class="form-control"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-default" type="button" data-dismiss="modal">بستن </button>
+                    <button class="btn btn-primary" type="submit" form="sale-admin-form">ثبت حراج</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" role="dialog" tabindex="-1" id="notif-admin-modal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                    <h4 class="text-center modal-title">فرم ورود اطلاعات</h4></div>
+                <div class="modal-body">
+                    <div>
+                        <form id="notif-admin-form">
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-md-3 col-md-offset-1">
+                                        <label class="control-label">۱. عنوان</label>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <input class="form-control" type="text" placeholder="VBRANDS">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-md-3 col-md-offset-1">
+                                        <label class="control-label">۲. متن</label>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <input class="form-control" type="text" placeholder="۵۰ درصد تخفیف زارا">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-md-3 col-md-offset-1">
+                                        <label class="control-label">۳. گروه</label>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <select class="form-control">
+                                            <option value="12">گروه یک</option>
+                                            <option value="13">گروه دو</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-md-3 col-md-offset-1">
+                                        <label class="control-label">۴. زیر گروه</label>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <select class="form-control">
+                                            <option value="12">زیر گروه یک</option>
+                                            <option value="13">زیر گروه دو</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-md-3 col-md-offset-1">
+                                        <label class="control-label">۵. ارسال</label>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <button class="btn btn-primary" type="button">ارسال تست</button>
+                                        <button class="btn btn-success" type="button" style="margin-right:5px;">ارسال پیام</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-md-3 col-md-offset-1">
+                                        <label class="control-label">۶. نمایش تعداد دستگاه</label>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="input-group">
+    <input id="prependedtext" name="prependedtext" class="form-control" placeholder="۲۵۵۰" type="text" required="">
+    <span class="input-group-addon">ios</span>
+</div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="input-group">
+    <input id="prependedtext" name="prependedtext" class="form-control" placeholder="۳۲۰۰" type="text" required="">
+    <span class="input-group-addon">android</span>
+</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="row">
+                                    <div class="col-md-3 col-md-offset-1">
+                                        <label class="control-label">۷. اعمال فیلتر</label>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="input-group">
+    <span class="input-group-addon">از شماره</span>
+    <input id="prependedtext" name="prependedtext" class="form-control" placeholder="۱" type="text" required="">
+</div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="input-group">
+    <span class="input-group-addon">تا شماره</span>
+    <input id="prependedtext" name="prependedtext" class="form-control" placeholder="۵۶۰" type="text" required="">
+</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-default" type="button" data-dismiss="modal">بستن </button>
+                    <button class="btn btn-primary" type="submit" form="notif-admin-form">ثبت نوتیف</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-basic">
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-md-offset-4">
+                        <p class="text-center" style="color:#f1f1f1;">Copyright © 2017 Vbrands Co</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../assets/js/moment.min.js"></script>
+    <script src="../assets/js/bootstrap-sortable.js"></script>
+    <script src="../assets/js/fileinput.min.js"></script>
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/pace.js"></script>
+    <script src="../assets/js/fa.js"></script>
+    <script src="../assets/js/bootstrap-select.min.js"></script>
+    <script src="../assets/js/bs-animation.js"></script>
+</body>
+
+</html>
